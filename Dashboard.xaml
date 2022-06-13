@@ -1,0 +1,16 @@
+﻿<Page
+    x:Class="Wellness2.Dashboard"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:Wellness2"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+
+    <Grid RequestedTheme="Light" Background="White">
+        <TextBlock x:Name="textBlock" HorizontalAlignment="Left" Margin="100,104,0,0" TextWrapping="Wrap" Text="Dashboard" VerticalAlignment="Top" FontSize="72" FontWeight="Bold" FocusVisualPrimaryBrush="Black" Foreground="Black"/>
+        <Button x:Name="button" Content="Record mood" Margin="1288,870,0,0" VerticalAlignment="Top" Height="85" Width="506" FontSize="48" FontWeight="Bold"/>
+
+    </Grid>
+</Page>
