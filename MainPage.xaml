@@ -9,10 +9,18 @@
     Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
 
     <Grid RequestedTheme="Light" Background="White">
-        <TextBlock x:Name="textBlock" HorizontalAlignment="Right" Margin="0,0,1250,755" TextWrapping="Wrap" Text="Username" VerticalAlignment="Bottom" FontSize="72" FontWeight="Bold" Width="354" FontFamily="Comic Sans MS"/>
-        <TextBox x:Name="username" HorizontalAlignment="Center" Margin="0,0,0,646" TextWrapping="Wrap" Text="" VerticalAlignment="Bottom" FontSize="72" Width="1284"/>
-        <PasswordBox x:Name="pass" HorizontalAlignment="Center" Margin="0,670,0,0" VerticalAlignment="Top" FontSize="72" Width="1284"/>
-        <TextBlock x:Name="textBlock1" HorizontalAlignment="Right" Margin="0,540,1283,0" TextWrapping="Wrap" Text="Password" VerticalAlignment="Top" FontSize="72" FontWeight="Bold" FontFamily="Comic Sans MS"/>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="Auto"/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+        </Grid.RowDefinitions>
+
+        <TextBlock x:Name="textBlock" HorizontalAlignment="Right" Margin="0,0,1090,758" TextWrapping="Wrap" Text="Username" VerticalAlignment="Bottom" FontSize="72" FontWeight="Bold" Width="354" FontFamily="Comic Sans MS"/>
+        <TextBox x:Name="username" HorizontalAlignment="Left" Margin="160,197,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" FontSize="72" Width="1468" Grid.ColumnSpan="2"/>
+        <PasswordBox x:Name="pass" HorizontalAlignment="Left" Margin="160,670,0,0" VerticalAlignment="Top" FontSize="72" Width="1468" Grid.ColumnSpan="2"/>
+        <TextBlock x:Name="textBlock1" HorizontalAlignment="Right" Margin="0,565,1130,0" TextWrapping="Wrap" Text="Password" VerticalAlignment="Top" FontSize="72" FontWeight="Bold" FontFamily="Comic Sans MS"/>
         <Button x:Name="login1" Click="submitButtonClick" Content="Login" Margin="1143,865,0,0" VerticalAlignment="Top" Height="90" Width="459" FontSize="48" FontWeight="Bold" FontFamily="Comic Sans MS"/>
     </Grid>
 </Page>

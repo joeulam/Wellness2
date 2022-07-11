@@ -20,19 +20,11 @@ namespace Wellness2
     /// <summary>
     /// An empty page that can be used on its own or navigated to within a Frame.
     /// </summary>
-    public sealed partial class Dashboard : Page
+    public sealed partial class Records : Page
     {
-        public Dashboard()
+        public Records()
         {
             this.InitializeComponent();
         }
-
-
-        void Mood(object sender, RoutedEventArgs e)
-        {
-            Frame.Navigate(typeof(Records));
-        }
     }
-
-    
 }

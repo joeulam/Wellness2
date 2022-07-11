@@ -10,7 +10,7 @@
 
     <Grid RequestedTheme="Light" Background="White">
         <TextBlock x:Name="textBlock" HorizontalAlignment="Left" Margin="100,104,0,0" TextWrapping="Wrap" Text="Dashboard" VerticalAlignment="Top" FontSize="72" FontWeight="Bold" FocusVisualPrimaryBrush="Black" Foreground="Black"/>
-        <Button x:Name="button" Content="Record mood" Margin="1288,870,0,0" VerticalAlignment="Top" Height="85" Width="506" FontSize="48" FontWeight="Bold"/>
+        <Button x:Name="button" Click="Mood" Content="Record mood" Margin="1288,870,0,0" VerticalAlignment="Top" Height="85" Width="506" FontSize="48" FontWeight="Bold"/>
 
     </Grid>
 </Page>
