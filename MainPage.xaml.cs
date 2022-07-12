@@ -29,6 +29,21 @@ namespace Wellness2
 
         public MainPage()
         {
+            Viewbox viewbox = new Viewbox();
+
+            // Set the Viewbox maximum width and height
+            // This will resize the inside content
+            viewbox.MaxWidth = 300;
+            viewbox.MaxHeight = 100;
+
+            // Set the margin of Viewbox
+            viewbox.Margin = new Thickness(10);
+
+            // Set the Viewbox Stretch programmatically
+            viewbox.Stretch = Stretch.Fill;
+
+            // Set the Viewbox Stretch direction
+            viewbox.StretchDirection = StretchDirection.Both;
             this.InitializeComponent();
         }
 
@@ -53,6 +68,7 @@ namespace Wellness2
             catch (Exception)
             {
                 logint = false;
+                wrongpass.Visibility = Visibility.Visible;
                 Debug.Write("FUCK FUCK FUCK");
             }
             if(logint)

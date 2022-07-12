@@ -6,14 +6,23 @@
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     mc:Ignorable="d"
-    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
-
-    <Grid Background="White">
-        <Frame x:Name="frame" Margin="10,5,1140,5">
-            <RadioButton x:Name="radioButton" Content="10" Margin="40,140,0,0" VerticalAlignment="Top" Height="125" Width="229" FontSize="72" FontWeight="Bold" Background="White" BorderBrush="White" FocusVisualPrimaryBrush="White" FocusVisualSecondaryBrush="#99000000" Foreground="Black">
-
-            </RadioButton>
-        </Frame>
-
-    </Grid>
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}" d:DesignWidth="1880" d:DesignHeight="1075">
+    <Viewbox Grid.ColumnSpan="2" Margin="0,0,0,0">
+        <Grid Background="White" Width="2115" Height="1209">
+            <StackPanel Orientation="Horizontal" Margin="10,188,598,877" FocusVisualSecondaryBrush="#99000000" FocusVisualPrimaryBrush="Black">
+                
+                <RadioButton x:Name="radioButton_Copy" Content="1" Height="125" Width="155" FontSize="72" FontWeight="Bold" Background="White" BorderBrush="White" FocusVisualPrimaryBrush="White" FocusVisualSecondaryBrush="#99000000" Foreground="Black" GroupName="Scale" RequestedTheme="Light" ClickMode="Press"/>
+                <RadioButton x:Name="radioButton_Copy6" Content="2" Height="125" Width="155" FontSize="72" FontWeight="Bold" Background="White" BorderBrush="White" FocusVisualPrimaryBrush="White" FocusVisualSecondaryBrush="#99000000" Foreground="Black" GroupName="Scale"/>
+                <RadioButton x:Name="radioButton_Copy5" Content="3" Height="125" Width="155" FontSize="72" FontWeight="Bold" Background="White" BorderBrush="White" FocusVisualPrimaryBrush="White" FocusVisualSecondaryBrush="#99000000" Foreground="Black" GroupName="Scale"/>
+                <RadioButton x:Name="radioButton_Copy4" Content="4" Height="125" Width="155" FontSize="72" FontWeight="Bold" Background="White" BorderBrush="White" FocusVisualPrimaryBrush="White" FocusVisualSecondaryBrush="#99000000" Foreground="Black" GroupName="Scale"/>
+                <RadioButton x:Name="radioButton_Copy1" Content="5" Height="125" Width="155" FontSize="72" FontWeight="Bold" Background="White" BorderBrush="White" FocusVisualPrimaryBrush="White" FocusVisualSecondaryBrush="#99000000" Foreground="Black" GroupName="Scale"/>
+                <RadioButton x:Name="radioButton_Copy3" Content="6" Height="125" Width="155" FontSize="72" FontWeight="Bold" Background="White" BorderBrush="White" FocusVisualPrimaryBrush="White" FocusVisualSecondaryBrush="#99000000" Foreground="Black" GroupName="Scale"/>
+                <RadioButton x:Name="radioButton" Content="7" Height="125" Width="155" FontSize="72" FontWeight="Bold" Background="White" BorderBrush="White" FocusVisualPrimaryBrush="White" FocusVisualSecondaryBrush="#99000000" Foreground="Black" GroupName="Scale"/>
+                <RadioButton x:Name="radioButton_Copy2" Content="8" Height="125" Width="155" FontSize="72" FontWeight="Bold" Background="White" BorderBrush="White" FocusVisualPrimaryBrush="White" FocusVisualSecondaryBrush="#99000000" Foreground="Black" GroupName="Scale"/>
+                <RadioButton x:Name="radioButton_Copy7" Content="9" Height="125" Width="155" FontSize="72" FontWeight="Bold" Background="White" BorderBrush="White" FocusVisualPrimaryBrush="White" FocusVisualSecondaryBrush="#99000000" Foreground="Black" GroupName="Scale"/>
+                <RadioButton x:Name="radioButton_Copy8" Content="10" Height="125" Width="155" FontSize="72" FontWeight="Bold" Background="White" BorderBrush="White" FocusVisualPrimaryBrush="White" FocusVisualSecondaryBrush="#99000000" Foreground="Black" GroupName="Scale"/>
+            </StackPanel>
+            <TextBlock x:Name="textBlock" HorizontalAlignment="Left" Margin="54,87,0,0" Text="On a scale from 1-10 how do you feel?" TextWrapping="Wrap" VerticalAlignment="Top" Height="167" Width="1467" FontWeight="Bold" FontSize="72" Foreground="Black"/>
+        </Grid>
+    </Viewbox>
 </Page>

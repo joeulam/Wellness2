@@ -7,10 +7,12 @@
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     mc:Ignorable="d"
     Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+    <Viewbox Grid.ColumnSpan="2" Margin="0,0,0,0">
 
-    <Grid RequestedTheme="Light" Background="White">
-        <TextBlock x:Name="textBlock" HorizontalAlignment="Left" Margin="100,104,0,0" TextWrapping="Wrap" Text="Dashboard" VerticalAlignment="Top" FontSize="72" FontWeight="Bold" FocusVisualPrimaryBrush="Black" Foreground="Black"/>
-        <Button x:Name="button" Click="Mood" Content="Record mood" Margin="1288,870,0,0" VerticalAlignment="Top" Height="85" Width="506" FontSize="48" FontWeight="Bold"/>
+        <Grid RequestedTheme="Light" Background="White" Height="1064" Width="1902">
+            <TextBlock x:Name="textBlock" HorizontalAlignment="Left" Margin="100,104,0,0" TextWrapping="Wrap" Text="Dashboard" VerticalAlignment="Top" FontSize="72" FontWeight="Bold" FocusVisualPrimaryBrush="Black" Foreground="Black"/>
+            <Button x:Name="button" Click="Mood" Content="Record mood" Margin="1258,839,0,0" VerticalAlignment="Top" Height="116" Width="536" FontSize="48" FontWeight="Bold"/>
 
-    </Grid>
+        </Grid>
+    </Viewbox>
 </Page>

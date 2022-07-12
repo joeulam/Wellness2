@@ -6,21 +6,25 @@
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     mc:Ignorable="d"
-    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}" d:DesignWidth="2195" d:DesignHeight="1235">
+    <Viewbox Grid.ColumnSpan="2" Margin="0,0,0,0">
+        <Grid RequestedTheme="Light" Background="White" Height="1000" Width="1801">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="1800.8"/>
+                <ColumnDefinition Width="Auto"/>
 
-    <Grid RequestedTheme="Light" Background="White">
-        <Grid.ColumnDefinitions>
-            <ColumnDefinition Width="Auto"/>
-            <ColumnDefinition/>
-        </Grid.ColumnDefinitions>
-        <Grid.RowDefinitions>
-            <RowDefinition Height="Auto"/>
-        </Grid.RowDefinitions>
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto"/>
+            </Grid.RowDefinitions>
 
-        <TextBlock x:Name="textBlock" HorizontalAlignment="Right" Margin="0,0,1090,758" TextWrapping="Wrap" Text="Username" VerticalAlignment="Bottom" FontSize="72" FontWeight="Bold" Width="354" FontFamily="Comic Sans MS"/>
-        <TextBox x:Name="username" HorizontalAlignment="Left" Margin="160,197,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" FontSize="72" Width="1468" Grid.ColumnSpan="2"/>
-        <PasswordBox x:Name="pass" HorizontalAlignment="Left" Margin="160,670,0,0" VerticalAlignment="Top" FontSize="72" Width="1468" Grid.ColumnSpan="2"/>
-        <TextBlock x:Name="textBlock1" HorizontalAlignment="Right" Margin="0,565,1130,0" TextWrapping="Wrap" Text="Password" VerticalAlignment="Top" FontSize="72" FontWeight="Bold" FontFamily="Comic Sans MS"/>
-        <Button x:Name="login1" Click="submitButtonClick" Content="Login" Margin="1143,865,0,0" VerticalAlignment="Top" Height="90" Width="459" FontSize="48" FontWeight="Bold" FontFamily="Comic Sans MS"/>
-    </Grid>
+            <TextBlock x:Name="textBlock" HorizontalAlignment="Right" Margin="0,0,1310,562" TextWrapping="Wrap" Text="Username" VerticalAlignment="Bottom" FontSize="72" FontWeight="Bold" Width="354" FontFamily="Comic Sans MS" Height="100"/>
+            <TextBox x:Name="username" HorizontalAlignment="Left" Margin="137,373,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" FontSize="72" Width="1388" Grid.ColumnSpan="2" Height="109"/>
+            <PasswordBox x:Name="pass" HorizontalAlignment="Left" Margin="137,591,0,0" VerticalAlignment="Top" FontSize="72" Width="1388" Grid.ColumnSpan="2" Height="109"/>
+            <TextBlock x:Name="textBlock1" HorizontalAlignment="Right" Margin="0,490,1298,0" TextWrapping="Wrap" Text="Password" VerticalAlignment="Top" FontSize="72" FontWeight="Bold" FontFamily="Comic Sans MS" Height="100" Width="366"/>
+            <Button x:Name="login1" Click="submitButtonClick" Content="Login" Margin="1075,843,0,0" VerticalAlignment="Top" Height="90" Width="459" FontSize="48" FontWeight="Bold" FontFamily="Comic Sans MS" Grid.ColumnSpan="2"/>
+            <TextBlock x:Name="wrongpass" HorizontalAlignment="Left" Margin="137,705,0,0" Text="Incorrect password or username" TextWrapping="Wrap" VerticalAlignment="Top" Height="62" Width="781" FontWeight="Bold" FontSize="20" FocusVisualPrimaryBrush="#FFFF5555" Foreground="#FFF34C4C" Visibility="Collapsed" RenderTransformOrigin="0.501,0.561" Grid.ColumnSpan="2"/>
+
+        </Grid>
+    </Viewbox>
 </Page>
